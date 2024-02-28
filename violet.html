@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(196, 113, 211);
+        }
+        .form1{
+            background-color: aliceblue;
+            height: 420px;
+            width: 400px;
+            padding-left: 40px;
+            margin-left: 100px;
+            margin-top: 100px;
+            border-radius: 5px;
+            align-items: ;
+        }
+        .create{
+            background-color: blueviolet;
+            width: 300px;
+            padding: 10px 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: aliceblue;
+        }
+        .loader{
+            border: 2px solid white;
+            height: 70px;
+            width: 300px;
+            position: absolute;
+            left: 200px;
+            top: 600px;
+        }
+        .load{
+            border: 2px solid white;
+            height: 30px;
+            width: 200px;
+            position: absolute;
+            top: 20px;
+            left: 50px;
+        }
+        .load2{
+            background-color: white;
+            height: 28px;
+            width: 100px;
+            position: absolute;
+        }
+        .create hi{
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            color: white;
+            left: 185px;
+        }
+        #aa{
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            color: blueviolet;
+        }
+        #bb{
+            height: 20px;
+            width: 20px;
+            position: absolute;
+        }
+        .three svg{
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            color: blueviolet;
+        }
+        .second{
+            background-color:rgb(204, 200, 197);
+            height: 500px;
+            width: 550px;
+            position: absolute;
+            left: 700px;
+            top: 100px;
+        }
+        .form2{
+            display: flex;
+            top: 100px;
+            left: 650px;
+            font-size: 15px;
+            gap: 60px;
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            background-color: white;
+        }
+        .one{
+            border: 2px solid wheat;
+            padding:5px 10px 5px 10px;
+            border-radius: 5px;
+            color: blueviolet;
+        }
+        .two{
+            padding:5px 10px 5px 10px;
+        }
+        .three{
+            background-color: blueviolet;
+            padding:5px 20px 5px 10px;
+            border-radius: 5px;
+            color: white;
+            margin-left: 30px;
+        }
+        .welcome{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .photo img{
+            height: 120px;
+            width: 550px;
+        }
+        .about{
+            background-color: rgb(218, 214, 214);
+            width: fit-content;
+            padding-left: 20px;
+            padding-bottom: 9px;
+            padding-right: 10px;
+            position: absolute;
+            top: 322px;
+        }
+        .brush svg{
+            height: 30px;
+            width: 30px;
+        }
+        .brush{
+            background-color: white;
+            position: absolute;
+            top: 470px;
+            left: 200px;
+            display: flex;
+            padding: 10px 15px 10px 15px;
+            border-radius: 5px;
+        }
+        .straw img{
+            height: 173px;
+            width: 100%;
+            padding-right: 20px;
+            padding-top: 20px;
+        }
+        .pages{
+            background-color: rgb(218, 214, 214);
+            position: absolute;
+            display: flex;
+            padding: 10px 10px 10px 10px ;
+            left: 310px;
+            top:470px ;
+            border-radius: 5px;
+            color: blueviolet;
+        }
+        .pages svg{
+            height: 30px;
+            width: 30px;
+        }
+        .home{
+            position: absolute;
+            align-items: center;
+            background-color: white;
+            padding: 20px 20px;
+            top: 300px;
+            border-radius: 5px;
+            left: 260px;
+        }
+        .home svg{
+            height: 25px;
+            width: 30px;
+            justify-content: center;
+        }
+        .outer{
+            border: 3px solid white;
+            height: 550px;
+            width: 600px;
+            position: absolute;
+            top: -35px;
+            left: -20px;
+            border-radius: 5px;
+            z-index: 0;
+        }
+        .hosting{
+            position: absolute;
+            top: -100px;
+            color: white;
+            left: -100px;
+        }
+        .cross svg{
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            color: white;
+            left: 550px;
+        }
+        .circle1 svg{
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            left: 50px;
+            color: white;
+        }
+        .circle2 svg{
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            left: 10px;
+            color: white;
+        }
+        .circle3 svg{
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            left: 90px;
+            color: white;
+        }
+        .load3 svg{
+            height: 30px;
+            width: 30px;
+            font-size: larger;
+            position: absolute;
+            color: rgb(255, 255, 255);
+            left: -130px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="form1">
+            <br><label for=""><b>Brand name</b></label><br>
+            <input type="text" placeholder="pipirito" style="padding: 10px 80px 10px 10px; border-radius: 5px; background-color: rgb(216, 216, 216);"><br>
+            <br><label for=""><b>Webiste type </b></label><br>
+            <select name="" id=""style="padding: 10px 110px 10px 20px;border-radius: 5px;background-color: rgb(216, 216, 216);">
+                <option value="">Business showcase</option><br>
+            </select><br>
+            <br><label for=""><b>Description</b></label><br>
+            <textarea name="" id="" cols="30" rows="10" style="height: 110px; width:300px; padding: 10px 80px 10px 10px; border-radius: 5px; background-color:rgb(216, 216, 216)">A business focused on customer made and diverse peppers from around the world</textarea>
+            <br><br><p class="create"><hi><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+              </svg>
+              </hi><b>Create a website</b></p>
+        </div>
+        <div class="loader">
+            <div class="load">
+                <div class="load2"></div>
+                <div class="load3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                      </svg>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+        <div class="form2">
+            <div class="one">
+                <h4>Back to AI form</h4>
+            </div>
+            <div class="two">
+                <p>How is your site <hlo id="aa"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path d="M7.493 18.5c-.425 0-.82-.236-.975-.632A7.48 7.48 0 0 1 6 15.125c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75A.75.75 0 0 1 15 2a2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23h-.777ZM2.331 10.727a11.969 11.969 0 0 0-.831 4.398 12 12 0 0 0 .52 3.507C2.28 19.482 3.105 20 3.994 20H4.9c.445 0 .72-.498.523-.898a8.963 8.963 0 0 1-.924-3.977c0-1.708.476-3.305 1.302-4.666.245-.403-.028-.959-.5-.959H4.25c-.832 0-1.612.453-1.918 1.227Z" />
+                  </svg>
+                  <hlo id="bb"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path d="M15.73 5.5h1.035A7.465 7.465 0 0 1 18 9.625a7.465 7.465 0 0 1-1.235 4.125h-.148c-.806 0-1.534.446-2.031 1.08a9.04 9.04 0 0 1-2.861 2.4c-.723.384-1.35.956-1.653 1.715a4.499 4.499 0 0 0-.322 1.672v.633A.75.75 0 0 1 9 22a2.25 2.25 0 0 1-2.25-2.25c0-1.152.26-2.243.723-3.218.266-.558-.107-1.282-.725-1.282H3.622c-1.026 0-1.945-.694-2.054-1.715A12.137 12.137 0 0 1 1.5 12.25c0-2.848.992-5.464 2.649-7.521C4.537 4.247 5.136 4 5.754 4H9.77a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23ZM21.669 14.023c.536-1.362.831-2.845.831-4.398 0-1.22-.182-2.398-.52-3.507-.26-.85-1.084-1.368-1.973-1.368H19.1c-.445 0-.72.498-.523.898.591 1.2.924 2.55.924 3.977a8.958 8.958 0 0 1-1.302 4.666c-.245.403.028.959.5.959h1.053c.832 0 1.612-.453 1.918-1.227Z" />
+                  </svg>
+                  </hlo>
+                  </hlo></p>
+            </div>
+            <div class="three">
+                <h4>Full edit mode<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                  </svg>
+                  </h4>
+            </div>
+        </div>
+        <div class="center">
+            <div class="welcome">
+                <h2>Welcome to Pipirito</h2>
+                <p style="font-size: smaller;">Discover the world of customer made peppers</p>
+                <br><h4 style="background-color: rgb(224, 179, 31); width: fit-content;padding: 5px 5px;margin-left: 210px;border-radius: 5px;">Explore Now</h4>
+            </div>
+            <div class="photo">
+                <br><img src="./image/garden/fruit.jpg" alt="" style="background-position: top;">
+            </div>
+        </div>
+        <div class="about">
+            <br><h3>About pipirito</h3>
+            <p style="font-size: 14px; padding-top: 10px;">At pipirito, we take pride in our custom <br>made peppers. Each pepper is carefully<br> selected and crafted to perfection,<br> resulting in unique and flavorful creations <br>Our team of experts combines traditional <br>techniques with innovative ideas to bring you<br>the most exquisite peppers you</p>
+        </div>
+        <div class="brush">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
+              </svg>
+              <h4>Style</h4> 
+              
+          </div>
+          <div class="straw">
+              <img src="./image/garden/straw.jpg" alt="">
+          </div>
+          <div class="pages">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
+              </svg>
+                <h4>Pages</h4>              
+          </div>
+          <div class="home">
+              <h6>Home</h6>
+              <br>
+              <h6>Conatct &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              </svg>
+              
+            </h6>
+            <hr>
+            <h5 style="padding-top: 10px; text-align: center;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              Add page</h5>
+          </div>
+          <div class="outer">
+              <div class="circle1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg> 
+              </div>
+              <div class="circle2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+              </div>
+              
+            <div class="circle3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+            </div>
+            <duv class="cross">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                  
+            </duv>
+              
+          </div>
+          <div class="hosting"><h3><hi style="font-size: 50px;">ℍ</hi> &nbsp;HOSTINGS</h3></div>
+    </div>
+    </div>
+</body>
+</html>
